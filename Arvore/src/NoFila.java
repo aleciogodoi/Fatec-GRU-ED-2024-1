@@ -1,9 +1,9 @@
 public class NoFila {
-    int dado;
+    NoArvore dado;
     NoFila proximo;
     
     // construtor
-    NoFila (int d) {
+    NoFila (NoArvore d) {
         dado = d;
         proximo = null;
     }

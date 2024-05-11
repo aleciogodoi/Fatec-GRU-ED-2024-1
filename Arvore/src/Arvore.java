@@ -79,22 +79,22 @@ public class Arvore {
         }
         
         Fila fila = new Fila();
-        fila.enqueue(raiz.dado);
+        fila.enqueue(raiz);
         NoArvore atual = raiz;
         int tamanhoFila, itensFila=1;
         while (!fila.isEmpty()) {
             tamanhoFila = itensFila;
             itensFila=0;
             for (int i = 0; i < tamanhoFila; i++) {
-                atual = this.find(raiz, fila.dequeue().dado);
+                atual = fila.dequeue().dado;
                 System.out.print(atual.dado + " ");
 
                 if (atual.esquerda != null) {
-                    fila.enqueue(atual.esquerda.dado);
+                    fila.enqueue(atual.esquerda);
                     itensFila++;
                 }
                 if (atual.direita != null) {
-                    fila.enqueue(atual.direita.dado);
+                    fila.enqueue(atual.direita);
                     itensFila++;
                 }
             }

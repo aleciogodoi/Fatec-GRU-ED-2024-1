@@ -1,7 +1,7 @@
 public class Fila {
     NoFila inicio;
     
-    public void enqueue(int d) {
+    public void enqueue(NoArvore d) {
         NoFila aux = inicio;
         NoFila novo = new NoFila(d);
         if (isEmpty()) {
