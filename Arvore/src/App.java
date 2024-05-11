@@ -11,7 +11,8 @@ public class App {
         a01.add(1);
         a01.add(4);
         a01.add(50);
-        
+        a01.add(30);
+
         a01.showLevels();
         /* 
         NoArvore pai = a01.father(a01.raiz, 10);
